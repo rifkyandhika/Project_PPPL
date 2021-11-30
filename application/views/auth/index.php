@@ -22,10 +22,9 @@
                                     <input type="password" class="form-control" placeholder="Password" required="" value="">
                                     <i class="ik ik-lock"></i>
                                 </div>
-                                <div class="row">
-                                    
+                                <div class="row">                                    
                                     <div class="col text-right">
-                                        <a href="forgot-password.html">Forgot Password ?</a>
+                                        <a href="<?= base_url('forgot') ?>">Forgot Password ?</a>
                                     </div>
                                 </div>
                                 <div class="sign-btn text-center">
