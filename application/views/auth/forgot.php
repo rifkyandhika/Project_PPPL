@@ -13,9 +13,13 @@
                             </div>
                             <h3>Forgot Password</h3>
                             <p>We will send you a link to reset password.</p>
-                            <form action="">
+                            <form action="" method="POST">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your email address" required="">
+                                    <input type="email" class="form-control <?= form_error('email') ? 'is-invalid' : ''; ?>" placeholder="Your email address" 
+                                    required="" name="email" value="<?= set_value('email'); ?>">
+                                    <div class="invalid-feedback">
+                                        <?= form_error('email'); ?>
+                                    </div>
                                     <i class="ik ik-mail"></i>
                                 </div>
                                 <div class="sign-btn text-center">
