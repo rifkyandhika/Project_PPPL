@@ -16,17 +16,17 @@ class Authentication extends CI_Controller
 
 	public function forgot()
 	{
-		$this->_validation();
-		if ($this->form_validation->run = false){
-			$data = [
-				'title' => 'Forgot Password'
-			];
-			$page = 'forgot';
-			$this-> _template($page, $data);
-		} else {
+		//$this->_validation();
+		//if ($this->form_validation->run == false){
+		$data = [
+			'title' => 'Forgot Password'
+		];
+		$page = 'forgot';
+		$this-> _template($page, $data);
+		//} else {
 			//kirim email reset password
-			echo "Kirim email reset password";
-		}
+		//	echo "Kirim email reset password";
+		//}
 	}
 	
 	private function _validation()
@@ -36,10 +36,10 @@ class Authentication extends CI_Controller
 			'Email',
 			'trim|required|valid_email',
 			[
-				'required' 		=> '%s wajib diisi'
+				'required' 		=> '%s wajib diisi',
 				'valid_email' 	=> 'Wajib berisi %s yang valid'
 			]
-		)
+			);
 	}
 
 	private function _template($page = null, $data = null)

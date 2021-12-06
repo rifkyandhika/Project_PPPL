@@ -9,16 +9,16 @@
                     <div class="col-xl-4 col-lg-6 col-md-7 my-auto p-0">
                         <div class="authentication-form mx-auto">
                             <div class="logo-centered">
-                                <a href="../index.html"><img src="<?= base_url('assets') ?>/src/img/brand.svg" alt=""></a>
+                                <a href=""><img src="<?= base_url('assets') ?>/src/img/brand.svg" alt=""></a>
                             </div>
                             <h3>Forgot Password</h3>
                             <p>We will send you a link to reset password.</p>
-                            <form action="" method="POST">
+                            <form action="">
                                 <div class="form-group">
-                                    <input type="email" class="form-control <?= form_error('email') ? 'is-invalid' : ''; ?>" placeholder="Your email address" 
-                                    required="" name="email" value="<?= set_value('email'); ?>">
+                                    <input type="text" class="form-control <?= form_error('email') ? 'is-invalid' : '' ; ?>"
+                                    placeholder="Your email address" required="" name="email" value="<?= set_value('email'); ?>">
                                     <div class="invalid-feedback">
-                                        <?= form_error('email'); ?>
+                                       
                                     </div>
                                     <i class="ik ik-mail"></i>
                                 </div>
