@@ -54,7 +54,7 @@ $route['default_controller']        = 'Authentication';
 
 $route['auth']                      = 'Authentication';
 $route['forgot']                    = 'Authentication/forgot';
-
-
+$route['forgotpassword/(:any)/(:any)']='Authentication/forgotpassword/$1/$2';
+$route['dasboaard']                 ='Admin_dasboard';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
