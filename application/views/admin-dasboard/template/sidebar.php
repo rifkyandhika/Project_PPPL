@@ -3,7 +3,7 @@
                     <div class="sidebar-header">
                         <a class="header-brand" href="index.html">
                             <div class="logo-img">
-                               <img src="../src/img/brand-white.svg" class="header-brand-img" alt="lavalite"> 
+                               <img src="<?= base_url('assets')?>/src/img/brand-white.svg" class="header-brand-img" alt="lavalite"> 
                             </div>
                             <span class="text">ThemeKit</span>
                         </a>
@@ -16,7 +16,7 @@
                             <nav id="main-menu-navigation" class="navigation-main">
                                 <div class="nav-lavel">Navigation</div>
                                 <div class="nav-item">
-                                    <a href="../index.html"><i class="ik ik-bar-chart-2"></i><span>Dashboard</span></a>
+                                    <a href="<?= base_url('assets')?>/index.html"><i class="ik ik-bar-chart-2"></i><span>Dashboard</span></a>
                                 </div>
                                 <div class="nav-item">
                                     <a href="navbar.html"><i class="ik ik-menu"></i><span>Navigation</span> <span class="badge badge-success">New</span></a>
@@ -102,7 +102,7 @@
                                 <div class="nav-lavel">Pages</div>
 
                                 <div class="nav-item has-sub">
-                                    <a href="#"><i class="ik ik-lock"></i><span>Authentication</span></a>
+                                    <a href="<?= base_url('assets')?>"><i class="ik ik-lock"></i><span>Authentication</span></a>
                                     <div class="submenu-content">
                                         <a href="login.html" class="menu-item">Login</a>
                                         <a href="register.html" class="menu-item">Register</a>
@@ -110,7 +110,7 @@
                                     </div>
                                 </div>
                                 <div class="nav-item has-sub">
-                                    <a href="#"><i class="ik ik-file-text"></i><span>Other</span></a>
+                                    <a href="<?= base_url('assets')?>"><i class="ik ik-file-text"></i><span>Other</span></a>
                                     <div class="submenu-content">
                                         <a href="profile.html" class="menu-item">Profile</a>
                                         <a href="invoice.html" class="menu-item">Invoice</a>
