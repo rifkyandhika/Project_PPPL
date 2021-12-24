@@ -18,7 +18,7 @@
                                 <div class="nav-item">
                                     <a href="<?= base_url('dasboard')?>"><i class="ik ik-bar-chart-2"></i><span>Dashboard</span></a>
                                 </div>
-                                    <div class="nav-item has-sub <?= $this->uri->segment(1)==='departement'?'active':''; ?>">
+                                    <div class="nav-item has-sub <?= $this->uri->segment(1)==='departement'?'active open':''; ?>">
                                     <a href="javascript:void(0)"><i class="ik ik-layers"></i><span>Data Master</span></a>
                                     <div class="submenu-content ">
                                         <a href="<?= base_url('departement')?>" class="menu-item" <?= $this->uri->segment(1)==='departement'?'active':''; ?>>Data Departemen</a>
