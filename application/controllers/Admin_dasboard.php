@@ -9,6 +9,11 @@ class Admin_dasboard  extends CI_Controller
     }
     public function index()
     {
-        $this->load->view('admin/dasboard/index');
+        $data = [
+            'title' => 'Dasboard',
+            'desc' =>'melihat data dasboard'
+        ];
+        $page = 'dasboard/index';
+        template($page,$data);
     }
 }
