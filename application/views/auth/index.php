@@ -13,7 +13,7 @@
                             </div>
                             <h3>Sign In to ThemeKit</h3>
                             <p>Happy to see you again!</p>
-                            <form action="<?= base_url('assets') ?>/index.html">
+                            <form action="<?= base_url('assets') ?>/pages/table-bootstrap.html">
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Email" required="" value="">
                                     <i class="ik ik-user"></i>
