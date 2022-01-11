@@ -23,19 +23,6 @@ class Barangkeluar extends CI_Controller
     {
         $this->form_validation->set_rules('tanggal_keluar', 'Tanggal Keluar', 'required|trim');
         $this->form_validation->set_rules('barang_id', 'Barang', 'required');
-
-        $input = $this->input->post('barang_id', true);
-        $stok = $this->admin->get('barang', ['id_barang' => $input], ['stok']);
-        $stok_valid = $stok + 1;
-
-        $this->form_validation->set_rules(
-            'jumlah_keluar',
-            'Jumlah Keluar',
-            "required|trim|numeric|greater_than[0]|less_than[{$stok_valid}]",
-            [
-                'less_than' => "Jumlah Keluar tidak boleh lebih dari {$stok}"
-            ]
-        );
     }
 
     public function add()
