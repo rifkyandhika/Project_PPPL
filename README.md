@@ -1,5 +1,4 @@
 # Aplikasi Pengadaan Barang<br/>
-## Free Source Code<br/>
 
 ### Aplikasi ini dibuat menggunakan
 - Codeigniter 3
@@ -9,5 +8,16 @@
 - Chart.js
 
 ### Keterangan <br/>
-Database : <code>ci_barang</code><br/>
+Database	: <code>ci_barang</code><br/>
 <br/>
+Link			: https://localhost/Project_PPPL
+<br />
+Akun Admin
+<br />
+Username : admin
+<br />
+Password : admin
+<br />
+
+##Support License
+MIT License
